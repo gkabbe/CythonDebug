@@ -6,7 +6,7 @@ setup(
   name = 'Bug',
   ext_modules = [
     Extension("test", ["test.pyx"], language = "c++"),
-    Extension("class", ["class.pyx"], language = "c++")
+    Extension("testclass", ["testclass.pyx"], language = "c++")
     ],
   cmdclass={'build_ext': build_ext}
 )
