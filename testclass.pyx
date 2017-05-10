@@ -1,10 +1,10 @@
 import cython
 
-cdef class Test:
-    cpdef double blub(self, double [:] x):
+cdef class A:
+    cpdef cython.floating blub(self, cython.floating [:] x):
         return x[0]
 
 
-cdef class Blub(Test):
-    cpdef double blub(self, double [:] x):
+cdef class B(A):
+    cpdef cython.floating blub(self, cython.floating [:] x):
         return x[-1]
